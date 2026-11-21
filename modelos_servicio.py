@@ -31,4 +31,4 @@ class ModuloAtencion:
     def operativo(self, estado: bool) -> None:
         if not isinstance(estado, bool):
             raise TypeError("El estado operativo debe ser booleano (True/False).")
-        self._operativo = estados
+        self._operativo = estado
