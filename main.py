@@ -66,4 +66,7 @@ for especialidad, datos in estadisticas.items():
         f"Máx = {datos['maximo']} | Mín = {datos['minimo']} | "
         f"Demorados (>25 min) = {datos['cantidad_demorados']}"
     )
+    from tablero_json import generar_tablero_y_json
+
+tablero_maestro = generar_tablero_y_json(modulos_clinica)
 
